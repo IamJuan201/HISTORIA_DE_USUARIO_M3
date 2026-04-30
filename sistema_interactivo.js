@@ -4,16 +4,19 @@
 const nombre = prompt("Escribe tu nombre: ");
 const edad = prompt("Escribe tu edad: ");
 
-// Aqui verifico si la edad ingresada es un numero, sino lo es se muestra un error en consola
+// Aqui verifico si la edad ingresada es un numero, sino lo es se muestra un error en consola y en una alerta
 if (isNaN(edad)) {
     console.error("Por favor, ingresa una edad válida en números.");
+    alert("ERROR! Solo puedes digitar números.");
 }
-// Si es la constante es un numero pasa a verificar en este condicional si es mayor o igual a 18 años, si es asi se muestra un mensaje de bienvenida para mayores de edad
+// Si es la constante es un numero pasa a verificar en este condicional si es mayor o igual a 18 años, si es asi se muestra un mensaje de bienvenida para mayores de edad en consola y en una alerta
 else if (edad >= 18) {
     console.log(`Hola ${nombre}, eres mayor de edad. ¡Prepárate para grandes oportunidades en el mundo de la programación!`);
+    alert(`Hola ${nombre}, eres mayor de edad. ¡Prepárate para grandes oportunidades en el mundo de la programación!`);
 }
 
-// En caso contrario se muestra un mensaje de bienvenida para menores de edad
+// En caso contrario se muestra un mensaje de bienvenida para menores de edad en consola y en una alerta
 else {
     console.log(`Hola ${nombre}, eres menor de edad. ¡Sigue aprendiendo y pronto podrás explorar el mundo de la programación!`);
+    alert(`Hola ${nombre}, eres menor de edad. ¡Sigue aprendiendo y pronto podrás explorar el mundo de la programación!`);
 }
