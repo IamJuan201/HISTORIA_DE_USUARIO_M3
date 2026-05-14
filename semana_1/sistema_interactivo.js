@@ -1,22 +1,22 @@
-//Sistema interactivo en javascript
+// Interactive system in JavaScript
 
-// Aqui declaro dos constantes para almacenar el nombre y otra para la edad segun lo que escriba el usuario en el prompt
-const nombre = prompt("Escribe tu nombre: ");
-const edad = prompt("Escribe tu edad: ");
+// Here I declare two constants to store the name and the age from the user input
+const nombre = prompt("Write your name: ");
+const edad = prompt("Write your age: ");
 
-// Aqui verifico si la edad ingresada es un numero, sino lo es se muestra un error en consola y en una alerta
+// Here I check if the age is a number, if not, it shows an error in console and alert
 if (isNaN(edad)) {
-    console.error("Por favor, ingresa una edad válida en números.");
-    alert("ERROR! Solo puedes digitar números.");
+    console.error("Please enter a valid age in numbers.");
+    alert("ERROR! You can only type numbers.");
 }
-// Si es la constante es un numero pasa a verificar en este condicional si es mayor o igual a 18 años, si es asi se muestra un mensaje de bienvenida para mayores de edad en consola y en una alerta
+// If the value is a number, it checks if the age is 18 or more
 else if (edad >= 18) {
-    console.log(`Hola ${nombre}, eres mayor de edad. ¡Prepárate para grandes oportunidades en el mundo de la programación!`);
-    alert(`Hola ${nombre}, eres mayor de edad. ¡Prepárate para grandes oportunidades en el mundo de la programación!`);
+    console.log(`Hello ${nombre}, you are an adult. Get ready for great opportunities in programming!`);
+    alert(`Hello ${nombre}, you are an adult. Get ready for great opportunities in programming!`);
 }
 
-// En caso contrario se muestra un mensaje de bienvenida para menores de edad en consola y en una alerta
+// Otherwise, it shows a message for minors
 else {
-    console.log(`Hola ${nombre}, eres menor de edad. ¡Sigue aprendiendo y pronto podrás explorar el mundo de la programación!`);
-    alert(`Hola ${nombre}, eres menor de edad. ¡Sigue aprendiendo y pronto podrás explorar el mundo de la programación!`);
+    console.log(`Hello ${nombre}, you are a minor. Keep learning and soon you can explore programming!`);
+    alert(`Hello ${nombre}, you are a minor. Keep learning and soon you can explore programming!`);
 }
