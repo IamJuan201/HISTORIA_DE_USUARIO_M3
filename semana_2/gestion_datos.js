@@ -14,7 +14,7 @@ console.log(productos);
 
 // Task 2
 
-let numeros = new set([1, 2, 3, 4, 4, 4, 5, 5]);
+let numeros = new Set([1, 2, 3, 4, 4, 4, 5, 5]);
 
 // Numeros sin duplicados
 console.log("\nNumeros sin duplicados:");
